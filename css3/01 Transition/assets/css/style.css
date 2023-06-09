@@ -1,0 +1,48 @@
+section{
+    background-color: teal;
+    padding: 20px;
+    margin: 20px;
+}
+.transition{
+    transition: 2s;
+    transition: color 2s;
+    transition: background-color 2s;
+}
+.cssColor{
+    transition: 2s;
+}
+/* P2.HTML */
+.bgClip{
+    border: 5px dotted blue;
+    border-radius: 10px;
+    text-align: justify;
+    transition: 2s;
+    background-clip: content-box;
+    background-clip: padding-box;
+    background-clip: border-box;
+}
+.baclip:hover{
+    border-radius: 50%;
+    text-align: center;
+
+}
+/* P3.HTML */
+.common{
+    width: 400px;
+    height: 100px;
+    margin: 20px;
+    background-color: red;
+    color: #fff;
+    transition: width 2s;
+}
+.common:hover{
+    width: 100px;
+    background-color: yellow;
+}
+#d1{transition-timing-function:linear;}/* cubic-bazier(0,0,1,1) */
+#d2{transition-timing-function:ease-in;}/* cubic-bazier(0.42,0,1,1) */
+#d3{transition-timing-function:ease-out;}
+#d4{transition-timing-function:ease;}
+#d5{transition-timing-function:ease-in-out;}
+#d6{transition-timing-function:steps(6,jump-start);}
+#d7{transition-timing-function:cubic-bazier(0.5,0.7,0.8,0.1);}
